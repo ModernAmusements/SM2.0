@@ -18,11 +18,11 @@
 </template>
 
 <script>
-import Vuex from "../store/index.js";
-import router from "../router";
+import Vuex from "./store/index.js";
+import router from "./router";
 
-import Bubbles from "../components/Bubbles.vue";
-import Nav from "../components/Nav.vue";
+import Bubbles from "./components/Bubbles.vue";
+import Nav from "./components/Nav.vue";
 
 export default {
   components: { Bubbles, Nav },

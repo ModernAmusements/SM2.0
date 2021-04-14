@@ -34,12 +34,17 @@ Route::get('/screening', function () {
     return view('screening');
 });
 
-
 Route::get('/thankYou', function () {
     return view('thankYou');
 });
+
  Route::get('/startSilentmoon', function () {
     return view('startSilentmoon');
+});
+
+
+Route::get('/startScreening', function () {
+    return view('startScreening');
 });
 
 

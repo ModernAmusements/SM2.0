@@ -23,7 +23,7 @@ window.Vue = require('vue');
 
 Vue.component('timer', require('./components/Timer.vue').default);
 Vue.component('home', require('./components/Home.vue').default);
-Vue.component('meditation', require('./components/Meditation.vue').default);
+Vue.component('meditation', require('./Meditation.vue').default);
 Vue.component('sound', require('./components/Sound.vue').default);
 Vue.component('type', require('./components/Type.vue').default);
 Vue.component('app', require('./components/App.vue').default);

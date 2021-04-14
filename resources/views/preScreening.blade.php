@@ -19,7 +19,7 @@
                         </p>
                         <img src="{{ asset('argon') }}/img/silent-moon-hero.png" class="w-75 img-fluid" alt="Responsive image">
                         <div class="text-center">
-                           <a href="/screening">
+                           <a href="/startScreening">
                             <button class="btn btn-lg btn-neutral mt-4">
                                 {{ __('HIER GEHTS ZUM SCREENING') }}<i class="fas fa-arrow-right"></i>
                             </button>

@@ -2,7 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../components/Home.vue'
 import Type from '../components/Type.vue'
-import Meditation from '../components/Meditation.vue'
+import Meditation from '../Meditation.vue'
 import Sound from '../components/Sound.vue'
 
 
