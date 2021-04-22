@@ -3,7 +3,7 @@
 @section('content')
     @include('layouts.headers.guest')
 
-    <div class="container mt--8 pb-5">
+    <div class="container mt-0 pb-5">
         <div class="row justify-content-center">
             <div class="col-lg-5 col-md-7">
                 <div class="card bg-secondary shadow border-0">
@@ -17,7 +17,7 @@
                                     {{ __('A fresh verification link has been sent to your email address.') }}
                                 </div>
                             @endif
-                            
+
                             {{ __('Before proceeding, please check your email for a verification link.') }}
                             @if (Route::has('verification.resend'))
                                 {{ __('If you did not receive the email') }},

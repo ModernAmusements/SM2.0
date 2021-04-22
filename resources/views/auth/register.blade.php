@@ -3,7 +3,7 @@
 @section('content')
 @include('layouts.headers.headerRegister')
 
-<div class="container mt--8 pb-5">
+<div class="container mt-0 pb-5">
     <!-- Table -->
     <div class="row justify-content-center">
         <div class="col-lg-6 col-md-8">
@@ -14,9 +14,9 @@
                     <div class="card-body px-lg-5 py-lg-5">
                     <div class="text-center text-muted mb-4">
 
-                        <h1 class="text-silentGreen">{{ __('Sounds interesting?') }}</h1>
+                        <h1 class="text-silentGreen">{{ __('Klingt interessant?') }}</h1>
                         <p class="text-lead mb-0">
-                            {{ __('To get any further informations on our project and how to participate, please enter your email below & we will gladly send you all the details ') }}
+                            {{ __('Um weitere Informationen zu unserem Projekt und zur Teilnahme zu erhalten, geben Sie bitte unten Ihre E-Mail-Adresse ein & wir senden Ihnen gerne alle Details zu') }}
                         </p>
 
                     </div>
@@ -58,8 +58,8 @@
                     <div class="card-body px-lg-5 py-lg-5">
 
                         <div class="text-center text-muted mb-4">
-                            <h1 class="text-silentGreen">{{ __('Create your account!') }}</h1>
-                            <small>{{ __('to start, please generate your participant ID:') }}</small>
+                            <h1 class="text-silentGreen">{{ __('Erstellen Sie Ihr Konto!') }}</h1>
+                            <small>{{ __('um zu starten, generieren Sie bitte Ihre Teilnehmer-ID:') }}</small>
                         </div>
 
 
@@ -70,7 +70,7 @@
                                     <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
                                 </div>
                                 <input class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}"
-                                    placeholder="{{ __('Particpant ID') }}" type="text" name="password" required>
+                                    placeholder="{{ __('Teilnehmer-ID') }}" type="text" name="password" required>
                             </div>
                             @if ($errors->has('password'))
                             <span class="invalid-feedback" style="display: block;" role="alert">
@@ -83,37 +83,35 @@
                                 <div class="input-group-prepend">
                                     <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
                                 </div>
-                                <input class="form-control" placeholder="{{ __('Confirm Particpant ID') }}" type="text"
+                                <input class="form-control" placeholder="{{ __('Bestätigen Sie die Teilnehmer-ID') }}" type="text"
                                     name="password_confirmation" required>
                             </div>
                         </div>
                         <div class="text-center text-muted mb-4">
 
-                            <small>{{ __('How to generate:') }}</small>
+                            <small>{{ __('So erzeugen Sie die Teilnehmer-ID:') }}</small>
                             <br>
-                            <small>{{ __('1. First two letters of the street you first lived in') }}</small>
+                            <small>{{ __('1. Die ersten beiden Buchstaben der Straße, in der Sie zuerst gewohnt haben') }}</small>
                             <br>
-                            <small>{{ __('2. Your birth month in numbers (i.e. April = 04)') }}</small>
+                            <small>{{ __('2. Ihr Geburtsmonat in Zahlen (d. h. April = 04)') }}</small>
                             <br>
-                            <small>{{ __('3. The last two letters of your mother’s first name') }}</small>
+                            <small>{{ __('3. Die letzten beiden Buchstaben des Vornamens Ihrer Mutter') }}</small>
                             <br>
-                            <small>{{ __('4. First two numbers of your current house number') }}</small>
-
-
+                            <small>{{ __('4. Die ersten beiden Ziffern Ihrer aktuellen Hausnummer') }}</small>
                         </div>
                         <div class="row my-4">
                             <div class="col-12">
                                 <div class="custom-control custom-control-alternative custom-checkbox">
                                     <input class="custom-control-input" id="customCheckRegister" type="checkbox">
                                     <label class="custom-control-label" for="customCheckRegister">
-                                        <span class="text-muted">{{ __('I agree with the') }} <a
-                                                href="#!">{{ __('Privacy Policy') }}</a></span>
+                                        <span class="text-muted">{{ __('Ich bin mit den') }} <a
+                                             href="#!">{{ __('Datenschutzbestimmungen') }}</a> einverstanden</span>
                                     </label>
                                 </div>
                             </div>
                         </div>
                         <div class="text-center">
-                            <button type="submit" class="btn btn-primary mt-4">{{ __('Create account') }}</button>
+                            <button type="submit" class="btn btn-primary mt-4">{{ __('Benutzerkonto erstellen') }}</button>
                         </div>
             </form>
         </div>

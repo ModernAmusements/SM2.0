@@ -171,7 +171,9 @@
                 <path d="M580.3 63.8H578.5V54.7H580.3V53.8H575V54.7H576.7V63.8H575V64.6H580.3V63.8Z" fill="white"/>
                 <path d="M597.9 54.7H599.6V53.8H594.9V54.7H596.7V61.5L590.1 53.8H587.1V54.7H588.7L589.2 55.4001V63.8H587.4V64.6H592.2V63.8H590.4V56.9001L597.2 64.8H597.9V54.7Z" fill="white"/>
             </svg>
-
+        </a>
+        <a class="navbar-brand-mobile" href="http://127.0.0.1:8000/home">
+            <img class="navbar-brand-img" src="http://127.0.0.1:8000/argon/img/brand/blue.png">
         </a>
         <button class="navbar-toggler"
                 type="button"
@@ -210,7 +212,7 @@
                 <li class="nav-item">
                     <a class="nav-link"
                        href="/welcome">
-                        <span class="nav-link-inner--text">{{ __('Get Started') }}</span>
+                        <span class="nav-link-inner--text">{{ __('Loslegen') }}</span>
                     </a>
                 </li>
                 <li class="nav-item">
@@ -222,13 +224,13 @@
                 <li class="nav-item">
                     <a class="nav-link"
                        href="{{ route('register') }}">
-                        <span class="nav-link-inner--text">{{ __('Register') }}</span>
+                        <span class="nav-link-inner--text">{{ __('Registrieren') }}</span>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link"
                        href="{{ route('login') }}">
-                        <span class="nav-link-inner--text">{{ __('Login') }}</span>
+                        <span class="nav-link-inner--text">{{ __('Anmeldung') }}</span>
                     </a>
                 </li>
             </ul>

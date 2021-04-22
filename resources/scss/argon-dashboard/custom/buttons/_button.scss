@@ -91,4 +91,9 @@
 
 .btn-neutral {
    color: theme-color("primary");
+   &:hover {
+    color: #58968B;
+    background-color: white;
+    border-color: white;
+ }
 }

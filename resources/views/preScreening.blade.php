@@ -7,15 +7,12 @@
             <div class="header-body text-center mt-7 mb-7">
                 <div class="row justify-content-center">
                     <div class="col-lg-5 col-md-6">
-                        <p class="lead text-white">Bei erfolgreichen Durchlauf des Screenings „Vielen Dank für Ihre Zeit. Glückwunsch, Sie
-                            können an der Studie teilnehmen! Wenn Sie immer noch Interesse haben, geben Sie bitte
-                            Ihre Mail-Adresse in das Feld. In Kürze erhalten Sie dann eine Bestätigungsmail, in welcher
-                            Sie detailliert über die Studie aufgeklärt werden. </br> Wir werden Ihnen Studieninformation und
-                            Informationen zum Datenschutz und Ihrem Einverständnis an diese Mail senden. Ihre Mail-
-                            Adresse wird zu keinem Zeitpunkt mit Ihren hier oder später angegebenen Antworten in
-                            Verbindung gebracht oder an Dritte weitergereicht. Die Angabe der Mail-Adresse ist
-                            freiwillig, aber notwendig um an der Studie teilzunehmen und weitere Informationen zu
-                            erhalten.“
+                        <h1 class="display-2 text-silentGreen">Worum geht's hier eigentlich?</h1>
+                        <p class="lead text-white">SilentMoon hat eine Mission: Die Gesundheit auf
+                            dieser Welt zu verbessern und das Glück zu steigern. Mit Millionen
+                            von Nutzern in über 190 Ländern sind wir bereits auf dem Weg dies
+                            zu erreichen. Neben unserem Hauptsitz in Santa Monica (Kalifornien),
+                            haben wir noch Büros in San Francisco und London.
                         </p>
                         <img src="{{ asset('argon') }}/img/silent-moon-hero.png" class="w-75 img-fluid" alt="Responsive image">
                         <div class="text-center">
@@ -25,6 +22,13 @@
                             </button>
                             </a>
                         </div>
+                        <p class="small mt-7 text-white">*Wir werden Ihnen Studieninformation und
+                            Informationen zum Datenschutz und Ihrem Einverständnis an diese Mail senden. Ihre Mail-
+                            Adresse wird zu keinem Zeitpunkt mit Ihren hier oder später angegebenen Antworten in
+                            Verbindung gebracht oder an Dritte weitergereicht. Die Angabe der Mail-Adresse ist
+                            freiwillig, aber notwendig um an der Studie teilzunehmen und weitere Informationen zu
+                            erhalten. Mehr Information dazu finden sie Hier.
+                        </p>
                     </div>
                 </div>
             </div>

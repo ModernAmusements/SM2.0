@@ -617,19 +617,19 @@ pre code {
 
 @media (min-width: 768px) {
   .container {
-    max-width: 720px;
+    max-width: 1140px;
   }
 }
 
 @media (min-width: 992px) {
   .container {
-    max-width: 960px;
+    max-width: 2000px;
   }
 }
 
 @media (min-width: 1200px) {
   .container {
-    max-width: 1140px;
+    max-width: 2000px;
   }
 }
 
@@ -655,8 +655,8 @@ pre code {
 
 .no-gutters > .col,
 .no-gutters > [class*=col-] {
-  padding-right: 0;
-  padding-left: 0;
+  padding-right: 1em;
+  padding-left: 1em;
 }
 
 .col-xl,
@@ -15073,6 +15073,12 @@ a.text-lighter:focus {
   color: #93BFA8;
 }
 
+.btn-neutral:hover {
+  color: #58968B;
+  background-color: white;
+  border-color: white;
+}
+
 .btn-icon .btn-inner--icon img {
   width: 20px;
 }
@@ -15680,14 +15686,28 @@ a.btn-icon-only {
   width: 100%;
   z-index: 1;
   background-color: transparent;
-  padding-left: 0 !important;
-  padding-right: 0 !important;
+  padding: 1em;
 }
 
 @media (min-width: 768px) {
   .main-content .container-fluid {
     padding-left: 39px !important;
     padding-right: 39px !important;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  .main-content {
+    position: relative;
+  }
+
+  .main-content .navbar-top {
+    position: absolute;
+    left: 0;
+    top: -20px;
+    width: 100%;
+    z-index: 1;
+    background-color: transparent;
   }
 }
 
@@ -16858,8 +16878,13 @@ textarea[resize=horizontal] {
 }
 
 .navbar-horizontal .navbar-brand svg {
+  display: flex;
   height: 75px;
   width: auto;
+}
+
+.navbar-horizontal .navbar-brand-mobile img {
+  display: none;
 }
 
 .navbar-horizontal .navbar-dark .navbar-brand {
@@ -16959,6 +16984,28 @@ textarea[resize=horizontal] {
   .navbar-horizontal .navbar-transparent .navbar-brand:hover,
   .navbar-horizontal .navbar-transparent .navbar-brand:focus {
     color: rgba(255, 255, 255, 0.95);
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  .navbar-horizontal .navbar-brand {
+    display: none;
+  }
+
+  .navbar-horizontal .navbar-brand svg {
+    display: none;
+  }
+
+  .navbar-horizontal .navbar-brand-mobile {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    padding: 1em;
+  }
+
+  .navbar-horizontal .navbar-brand-mobile img {
+    display: flex;
+    width: 50%;
   }
 }
 

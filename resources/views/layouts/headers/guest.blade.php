@@ -5,7 +5,6 @@
                 <div class="col-lg-5 col-md-6">
                     <h1 class="display-3 text-silentGreen">{{ __('Welcome to SilentMoon.') }}</h1>
                         <p class="lead text-white">{{ __('explore free meditations, gain different attitudes and perspectives, while contributing to the science') }}</p>
-
                     <img src="{{ asset('argon') }}/img/silent-moon-hero.png" class="img-fluid" alt="Responsive image">
                 </div>
             </div>
