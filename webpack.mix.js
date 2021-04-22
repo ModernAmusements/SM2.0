@@ -11,8 +11,7 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.sass('resources/scss/argon-dashboard.scss', 'public/css')
-   .js('resources/js/app.js', 'public/js')
+mix.js('resources/js/app.js', 'public/js')
    .js('resources/js/PreVueScreening/src/main.js', 'public/js')
 
 

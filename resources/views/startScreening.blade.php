@@ -1,1 +1,1 @@
-@extends('layouts.appSilentMoon', ['class' => 'bg-default'])
+@extends('layouts.appScreening', ['class' => 'bg-default'])
