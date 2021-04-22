@@ -218,6 +218,15 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
 // import { store, mutations } from "./store"
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "App",
@@ -235,7 +244,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
 //
 //
 //
@@ -485,13 +493,13 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
       if (this.correctAnswers < 5) {
         return {
-          text: "Vielen Dank für Ihre Zeit. Glückwunsch, Sie können an der Studie teilnehmen!"
+          text: "Vielen Dank für Ihre Zeit, leider kommen Sie nicht für die Studie in Frage"
         };
       }
 
       if (this.correctAnswers == 6) {
         return {
-          text: "Vielen Dank für Ihre Zeit. Glückwunsch, Sie können an der Studie teilnehmen!"
+          text: 'Vielen Dank für Ihre Zeit. Glückwunsch, Sie können an der Studie teilnehmen!<br/><br/><a class="btn btn-lg btn-neutral" href="/register">Zur Anmeldung</a>'
         };
       } else {
         return {};
@@ -5081,7 +5089,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, "html {\n  height: 100%;\n}\nbody {\n  height: 100%;\n  background: linear-gradient(180deg, #FAF8F5 4.24%, rgba(255, 255, 255, 0) 72.25%);\n  color: #3F414E;\n}\n#app {\n  min-height: 100%;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  text-align: center;\n}\n.v-leave {\n  opacity: 1;\n}\n.v-leave-active {\n  transition: opacity 0.5s;\n}\n.v-leave-to {\n  opacity: 0;\n}\n.v-enter {\n  opacity: 0;\n}\n.v-enter-active {\n  transition: opacity 0.5s;\n}\n.v-enter-to {\n  opacity: 1;\n}", ""]);
+exports.push([module.i, "html {\n  height: 100%;\n}\nbody {\n  height: 100%;\n  background: linear-gradient(180deg, #FAF8F5 4.24%, rgba(255, 255, 255, 0) 72.25%);\n  color: #3F414E;\n}\n#app {\n  min-height: 100%;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  text-align: center;\n}\n#app .app-header {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 95px;\n  padding: 15px;\n  display: flex;\n  justify-content: space-between;\n  font-size: 11px;\n  flex-direction: column;\n}\n#app .app-header a {\n  text-decoration: none;\n  border-bottom: 1px solid #3F414E;\n}\n#app .app-heading {\n  display: flex;\n  align-items: center;\n  position: absolute;\n  top: 30px;\n  left: 50%;\n  margin: 0;\n  padding-left: 20px;\n  font-size: 14px;\n  line-height: 15px;\n  transform: translateX(-50%);\n  cursor: default;\n  user-select: none;\n}\n#app .app-heading img {\n  margin-right: 8px;\n  width: 100%;\n  height: auto;\n}\n@media (min-width: 600px) {\n#app .app-header {\n    height: 90px;\n    padding: 30px 15px;\n    align-items: center;\n}\n#app .app-heading {\n    top: 30px;\n}\n}\n#app .app-heading-icon {\n  position: absolute;\n  top: 1px;\n  left: -5px;\n  fill: #eee;\n  width: 26px;\n  height: 26px;\n}\n#app .app-heading span {\n  display: block;\n}\n.v-leave {\n  opacity: 1;\n}\n.v-leave-active {\n  transition: opacity 0.5s;\n}\n.v-leave-to {\n  opacity: 0;\n}\n.v-enter {\n  opacity: 0;\n}\n.v-enter-active {\n  transition: opacity 0.5s;\n}\n.v-enter-to {\n  opacity: 1;\n}", ""]);
 // Exports
 module.exports = exports;
 
@@ -5099,7 +5107,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ".close_btn_wrapper[data-v-d461b70e] {\n  cursor: pointer;\n  position: absolute;\n  top: -20px;\n  color: #d6d3cd;\n  width: 40px;\n  height: 40px;\n  border-radius: 50%;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  background-color: #93BFA8;\n  transition: 0.4s ease-in-out;\n}\n.close_btn_wrapper[data-v-d461b70e]:hover {\n  transform: rotate(0.75turn);\n}\n.fail-score-img[data-v-d461b70e] {\n  max-width: 450px;\n}\n.part-score-img[data-v-d461b70e] {\n  width: 320px;\n}\n.all-score-img[data-v-d461b70e] {\n  max-width: 480px;\n}\n.explanation-modal[data-v-d461b70e] {\n  color: rgba(0, 0, 0, 0.8);\n  text-align: left;\n}\n.explanation_text[data-v-d461b70e] {\n  height: 400px;\n  overflow-y: scroll;\n  background-color: #3F414E;\n  border-radius: 4px;\n  padding: 24px 20px;\n  text-align: left;\n  line-height: 1.5rem;\n  color: #fff;\n}\n.explanation_text img[data-v-d461b70e] {\n  margin: 12px 0;\n}\n.explanation-modal-container[data-v-d461b70e] {\n  max-width: 95%;\n  width: 450px;\n  height: auto;\n  position: fixed;\n  left: 50%;\n  top: 50%;\n  transform: translate(-50%, -50%);\n  z-index: 9999999;\n  border-radius: 5px;\n}\n.explanation-modal-container .explanation-modal-inner[data-v-d461b70e] {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  position: relative;\n}\n.explanation-modal-header[data-v-d461b70e] {\n  display: flex;\n  justify-content: center;\n}\n.explanation-modal-header p[data-v-d461b70e] {\n  margin-bottom: 0;\n}\n.explanation-modal-close[data-v-d461b70e] {\n  align-self: flex-start;\n  font-size: 20px;\n  color: rgba(217, 83, 79, 0.8);\n  background: none;\n  border: none;\n  cursor: pointer;\n}\n.explanation-modal-content[data-v-d461b70e] {\n  font-size: 17px;\n  width: 100%;\n}\n.explanation-modal-bg[data-v-d461b70e] {\n  position: fixed;\n  top: -50%;\n  left: -50%;\n  width: 200%;\n  height: 200%;\n  z-index: 999;\n}\n.explanation-modal-hidden[data-v-d461b70e] {\n  display: none;\n}\n.explanation-modal-visible[data-v-d461b70e] {\n  display: block;\n}\n.scale-enter-active[data-v-d461b70e] {\n  animation: bounce-in-data-v-d461b70e 0.3s;\n}\n.scale-leave-active[data-v-d461b70e] {\n  animation: bounce-in-data-v-d461b70e 0.3s reverse;\n}\n@keyframes bounce-in-data-v-d461b70e {\n0% {\n    transform: translate(-50%, -50%) scale(0);\n}\n70% {\n    transform: translate(-50%, -50%) scale(1.1);\n}\n100% {\n    transform: translate(-50%, -50%) scale(1);\n}\n}", ""]);
+exports.push([module.i, ".close_btn_wrapper[data-v-d461b70e] {\n  cursor: pointer;\n  position: absolute;\n  color: #d6d3cd;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  transition: 0.4s ease-in-out;\n  top: -30px;\n}\n.close_btn_wrapper[data-v-d461b70e]:hover {\n  /* transform: rotate(0.75turn); */\n}\n.fail-score-img[data-v-d461b70e] {\n  max-width: 450px;\n}\n.part-score-img[data-v-d461b70e] {\n  width: 320px;\n}\n.all-score-img[data-v-d461b70e] {\n  max-width: 480px;\n}\n.explanation-modal[data-v-d461b70e] {\n  color: rgba(0, 0, 0, 0.8);\n  text-align: left;\n}\n.explanation_text[data-v-d461b70e] {\n  height: 400px;\n  text-align: center;\n  overflow-y: scroll;\n  background: #F2F3F7;\n  padding: 24px 20px;\n  text-align: center;\n  font-weight: 500;\n  line-height: 1.5rem;\n  border-radius: 15px;\n  color: #3F414E;\n}\n.explanation_text img[data-v-d461b70e] {\n  margin: 12px 0;\n}\n.explanation-modal-container[data-v-d461b70e] {\n  max-width: 95%;\n  width: 450px;\n  height: auto;\n  position: fixed;\n  left: 50%;\n  top: 50%;\n  transform: translate(-50%, -50%);\n  z-index: 9999999;\n  border-radius: 5px;\n}\n.explanation-modal-container .explanation-modal-inner[data-v-d461b70e] {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  position: relative;\n}\n.explanation-modal-header[data-v-d461b70e] {\n  display: flex;\n  justify-content: center;\n}\n.explanation-modal-header p[data-v-d461b70e] {\n  margin-bottom: 0;\n}\n.explanation-modal-close[data-v-d461b70e] {\n  align-self: flex-start;\n  font-size: 20px;\n  color: rgba(217, 83, 79, 0.8);\n  background: none;\n  border: none;\n  cursor: pointer;\n}\n.explanation-modal-content[data-v-d461b70e] {\n  font-size: 17px;\n  width: 100%;\n}\n.explanation-modal-bg[data-v-d461b70e] {\n  position: fixed;\n  top: -50%;\n  left: -50%;\n  width: 200%;\n  height: 200%;\n  z-index: 999;\n}\n.explanation-modal-hidden[data-v-d461b70e] {\n  display: none;\n}\n.explanation-modal-visible[data-v-d461b70e] {\n  display: block;\n}\n.scale-enter-active[data-v-d461b70e] {\n  animation: bounce-in-data-v-d461b70e 0.3s;\n}\n.scale-leave-active[data-v-d461b70e] {\n  animation: bounce-in-data-v-d461b70e 0.3s reverse;\n}\n@keyframes bounce-in-data-v-d461b70e {\n0% {\n    transform: translate(-50%, -50%) scale(0);\n}\n70% {\n    transform: translate(-50%, -50%) scale(1.1);\n}\n100% {\n    transform: translate(-50%, -50%) scale(1);\n}\n}", ""]);
 // Exports
 module.exports = exports;
 
@@ -5118,7 +5126,7 @@ var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../../node_mo
 exports = ___CSS_LOADER_API_IMPORT___(false);
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap);"]);
 // Module
-exports.push([module.i, "button:focus {\n  border: none;\n  outline: none;\n}\n.chart_icon {\n  cursor: pointer;\n  margin-left: 8px;\n}\n.chart_icon svg {\n  width: 30px;\n  height: 30px;\n  vertical-align: middle;\n}\na {\n  text-decoration: none;\n}\n.highlight_wording {\n  color: #0387c7;\n}\n.modal_why {\n  font-size: 1.2rem;\n  cursor: pointer;\n}\n.final_score {\n  font-size: 2rem;\n}\n.explanation_text {\n  height: 240px;\n  overflow-y: scroll;\n  background-color: #181e24;\n  border-radius: 4px;\n  padding: 15px 20px;\n  text-align: justify;\n  line-height: 1.5rem;\n  color: darkgray;\n}\n.explanation_text img {\n  margin: 12px 0;\n}\n.quiz {\n  position: relative;\n  width: 100%;\n  max-width: 500px;\n}\n.result_img img {\n  margin: 15px 0;\n  width: 300px;\n}\n.quiz-counter {\n  position: absolute;\n  top: -25px;\n  font-size: 14px;\n  font-weight: 500;\n}\n.quiz-counter .current-question {\n  font-size: 22px;\n}\n@media (min-width: 600px) {\n.quiz-counter {\n    font-size: 16px;\n}\n}\n.welcome_img_wrapper {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n.quiz-img {\n  display: block;\n  width: 200px;\n  margin-bottom: 1rem;\n}\n.quiz-heading {\n  margin: 20px 0;\n  font-size: 1.5rem;\n  line-height: 1.8;\n  font-weight: 600;\n  color: #3F414E;\n  text-align: left;\n}\n.welcome-heading {\n  margin: 20px 0;\n  font-size: 1.5rem;\n  line-height: 1.8;\n  font-weight: 600;\n  color: #3F414E;\n  text-align: center;\n}\n@media (min-width: 600px) {\n.quiz-heading {\n    /* margin: -40px 0 30px; */\n    font-size: 1.5rem;\n}\n}\n.quiz-result {\n  margin: 20px 0;\n  font-size: 14px;\n  line-height: 1.4rem;\n  letter-spacing: 1px;\n}\n@media (min-width: 600px) {\n.quiz-result {\n    margin: 20px 0 30px;\n    font-size: 14px;\n}\n}\n.quiz-button {\n  display: inline-block;\n  padding: 10px 30px;\n  margin-bottom: 4px;\n  border: 1px solid rgba(238, 238, 238, 0.3);\n  color: #eee;\n  text-decoration: none;\n  transition: border-color 0.5s;\n}\n.quiz-button:hover {\n  border-color: #eee;\n}\n.quiz-questions {\n  max-width: 400px;\n  padding: 0;\n  margin: 0 auto;\n  list-style: none;\n}\n.quiz-question {\n  margin-top: 10px;\n}\n.quiz-question-button {\n  width: 100%;\n  padding: 13px;\n  border-radius: 15px;\n  background: #F2F3F7;\n  color: #3F414E;\n  font-size: 1rem;\n  font-weight: 500;\n  border: 0;\n  cursor: pointer;\n  transition: border-color 0.5s, background 0.5s;\n  outline: none;\n}\n.quiz-question-button:hover {\n  background: #989cac;\n  color: #3F414E;\n}\n.quiz-question-button.correct {\n  background: #28a745;\n}\n.quiz-question-button.wrong {\n  background: #dc3545;\n}\n@media (min-width: 600px) {\n.quiz-question-button {\n    font-size: 14px;\n}\n}\n@media (hover: hover) {\n.quiz-question-button:hover,\n.quiz-question-button:focus {\n    border-color: #eee;\n}\n}\n/* Loader */\n.loader {\n  height: 32px;\n  width: 32px;\n}\n.loader span {\n  display: block;\n  position: fixed;\n  top: 0;\n  left: 0;\n  bottom: 0;\n  right: 0;\n  margin: auto;\n  height: 32px;\n  width: 32px;\n}\n.loader span::before,\n.loader span::after {\n  content: \"\";\n  display: block;\n  position: absolute;\n  top: 0;\n  left: 0;\n  bottom: 0;\n  right: 0;\n  margin: auto;\n  height: 32px;\n  width: 32px;\n  border: 2px solid #fff;\n  border-radius: 50%;\n  opacity: 0;\n  animation: loader-1 1.5s cubic-bezier(0.075, 0.82, 0.165, 1) infinite;\n}\n@keyframes loader-1 {\n0% {\n    transform: translate3d(0, 0, 0) scale(0);\n    opacity: 1;\n}\n100% {\n    transform: translate3d(0, 0, 0) scale(1.5);\n    opacity: 0;\n}\n}\n.loader span::after {\n  animation: loader-2 1.5s cubic-bezier(0.075, 0.82, 0.165, 1) 0.25s infinite;\n}\n@keyframes loader-2 {\n0% {\n    transform: translate3d(0, 0, 0) scale(0);\n    opacity: 1;\n}\n100% {\n    transform: translate3d(0, 0, 0) scale(1);\n    opacity: 0;\n}\n}\n/* Transition */\n.fade-enter-active,\n.fade-leave-active {\n  transition: opacity 0.5s, transform 0.5s;\n}\n.fade-enter, .fade-leave-to {\n  opacity: 0;\n  transform: scale(0.95);\n}", ""]);
+exports.push([module.i, ".wrapper {\n  width: 95%;\n  margin: 0 auto;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  padding: 110px 15px 30px 15px;\n}\nbutton:focus {\n  border: none;\n  outline: none;\n}\n.chart_icon {\n  cursor: pointer;\n  margin-left: 8px;\n}\n.chart_icon svg {\n  width: 30px;\n  height: 30px;\n  vertical-align: middle;\n}\na {\n  text-decoration: none;\n}\n.highlight_wording {\n  color: #0387c7;\n}\n.modal_why {\n  font-size: 1.2rem;\n  cursor: pointer;\n}\n.final_score {\n  font-size: 2rem;\n}\n.explanation_text {\n  height: 240px;\n  overflow-y: scroll;\n  background-color: #181e24;\n  border-radius: 4px;\n  padding: 15px 20px;\n  text-align: justify;\n  line-height: 1.5rem;\n  color: darkgray;\n}\n.explanation_text img {\n  margin: 12px 0;\n}\n.quiz {\n  position: relative;\n  width: 100%;\n  max-width: 500px;\n}\n.result_img img {\n  margin: 15px 0;\n  width: 300px;\n}\n.quiz-counter {\n  position: absolute;\n  top: -25px;\n  font-size: 14px;\n  font-weight: 500;\n}\n.quiz-counter .current-question {\n  font-size: 22px;\n}\n@media (min-width: 600px) {\n.quiz-counter {\n    font-size: 16px;\n}\n}\n.welcome_img_wrapper {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n.quiz-img {\n  display: block;\n  width: 200px;\n  margin-bottom: 1rem;\n}\n.quiz-heading {\n  margin: 20px 0;\n  font-size: 1.5rem;\n  line-height: 1.8;\n  font-weight: 600;\n  color: #3F414E;\n  text-align: left;\n}\n.welcome-heading {\n  margin: 20px 0;\n  font-size: 1.5rem;\n  line-height: 1.8;\n  font-weight: 600;\n  color: #3F414E;\n  text-align: center;\n}\n@media (min-width: 600px) {\n.quiz-heading {\n    /* margin: -40px 0 30px; */\n    font-size: 1.5rem;\n}\n}\n.quiz-result {\n  margin: 20px 0;\n  font-size: 22px;\n  line-height: 1.4rem;\n  letter-spacing: 1px;\n}\n@media (min-width: 600px) {\n.quiz-result {\n    margin: 20px 0 30px;\n}\n}\n.quiz-button {\n  display: inline-block;\n  padding: 10px 30px;\n  margin-bottom: 4px;\n  border: 1px solid rgba(238, 238, 238, 0.3);\n  color: #eee;\n  text-decoration: none;\n  transition: border-color 0.5s;\n}\n.quiz-button:hover {\n  border-color: #eee;\n}\n.quiz-questions {\n  max-width: 400px;\n  padding: 0;\n  margin: 0 auto;\n  list-style: none;\n}\n.quiz-question {\n  margin-top: 10px;\n}\n.quiz-question-button {\n  width: 100%;\n  padding: 13px;\n  border-radius: 15px;\n  background: #F2F3F7;\n  color: #3F414E;\n  font-size: 1rem;\n  font-weight: 500;\n  border: 0;\n  cursor: pointer;\n  transition: border-color 0.5s, background 0.5s;\n  outline: none;\n}\n.quiz-question-button:hover {\n  background: #989cac;\n  color: #3F414E;\n}\n.quiz-question-button.correct {\n  background: #28a745;\n}\n.quiz-question-button.wrong {\n  background: #dc3545;\n}\n@media (min-width: 600px) {\n.quiz-question-button {\n    font-size: 14px;\n}\n}\n@media (hover: hover) {\n.quiz-question-button:hover,\n.quiz-question-button:focus {\n    border-color: #eee;\n}\n}\n/* Loader */\n.loader {\n  height: 32px;\n  width: 32px;\n}\n.loader span {\n  display: block;\n  position: fixed;\n  top: 0;\n  left: 0;\n  bottom: 0;\n  right: 0;\n  margin: auto;\n  height: 32px;\n  width: 32px;\n}\n.loader span::before,\n.loader span::after {\n  content: \"\";\n  display: block;\n  position: absolute;\n  top: 0;\n  left: 0;\n  bottom: 0;\n  right: 0;\n  margin: auto;\n  height: 32px;\n  width: 32px;\n  border: 2px solid #fff;\n  border-radius: 50%;\n  opacity: 0;\n  animation: loader-1 1.5s cubic-bezier(0.075, 0.82, 0.165, 1) infinite;\n}\n@keyframes loader-1 {\n0% {\n    transform: translate3d(0, 0, 0) scale(0);\n    opacity: 1;\n}\n100% {\n    transform: translate3d(0, 0, 0) scale(1.5);\n    opacity: 0;\n}\n}\n.loader span::after {\n  animation: loader-2 1.5s cubic-bezier(0.075, 0.82, 0.165, 1) 0.25s infinite;\n}\n@keyframes loader-2 {\n0% {\n    transform: translate3d(0, 0, 0) scale(0);\n    opacity: 1;\n}\n100% {\n    transform: translate3d(0, 0, 0) scale(1);\n    opacity: 0;\n}\n}\n/* Transition */\n.fade-enter-active,\n.fade-leave-active {\n  transition: opacity 0.5s, transform 0.5s;\n}\n.fade-enter, .fade-leave-to {\n  opacity: 0;\n  transform: scale(0.95);\n}", ""]);
 // Exports
 module.exports = exports;
 
@@ -19830,6 +19838,8 @@ var render = function() {
     "div",
     { attrs: { id: "app" } },
     [
+      _vm._m(0),
+      _vm._v(" "),
       _c(
         "transition",
         { attrs: { mode: "out-in" } },
@@ -19840,7 +19850,23 @@ var render = function() {
     1
   )
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("header", { staticClass: "app-header" }, [
+      _c("img", { attrs: { src: __webpack_require__(/*! ../assets/white.png */ "./resources/js/PreVueScreening/assets/white.png"), alt: "" } }),
+      _vm._v(" "),
+      _c("h3", { staticClass: "app-header-text" }, [
+        _vm._v("\n      Thanks To\n      "),
+        _c("a", { attrs: { href: "", target: "_blank" } }, [
+          _vm._v("\n      Frau Mustermann\n      ")
+        ])
+      ])
+    ])
+  }
+]
 render._withStripped = true
 
 
@@ -19905,28 +19931,12 @@ var render = function() {
                   },
                   [
                     _c(
-                      "svg",
+                      "a",
                       {
-                        attrs: {
-                          xmlns: "http://www.w3.org/2000/svg",
-                          width: "24",
-                          height: "24",
-                          viewBox: "0 0 24 24"
-                        }
+                        staticClass: "btn btn-lg btn-neutral",
+                        attrs: { href: "#start-quiz" }
                       },
-                      [
-                        _c("path", {
-                          staticStyle: {
-                            "--darkreader-inline-fill": "#d6d3cd"
-                          },
-                          attrs: {
-                            d:
-                              "M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z",
-                            fill: "#eee",
-                            "data-darkreader-inline-fill": ""
-                          }
-                        })
-                      ]
+                      [_vm._v("\n                 Alles klar!\n              ")]
                     )
                   ]
                 )
@@ -19983,14 +19993,14 @@ var render = function() {
                 _vm._v(" "),
                 _vm.stage === "welcome"
                   ? _c("h1", { staticClass: "welcome-heading" }, [
-                      _vm._v("Willkommen beim Screening")
+                      _vm._v("\n          Willkommen beim Screening\n      ")
                     ])
                   : _vm._e(),
                 _vm._v(" "),
                 _vm.stage === "welcome"
                   ? _c("p", { staticClass: "quiz-result" }, [
                       _vm._v(
-                        "\n         Ihre Mail-Adresse wird zu keinem Zeitpunkt mit Ihren\n         hier oder später angegebenen Antworten in Verbindung gebracht\n         oder an Dritte weitergereicht. Die Angabe der Mail-Adresse ist\n         freiwillig, aber notwendig um an der Studie teilzunehmen und\n         weitere Informationen zu erhalten.“\n\n      "
+                        "\n         Ihre Mail-Adresse wird zu keinem Zeitpunkt mit Ihren\n         hier oder später angegebenen Antworten in Verbindung gebracht\n         oder an Dritte weitergereicht. Die Angabe der Mail-Adresse ist\n         freiwillig, aber notwendig um an der Studie teilzunehmen und\n         weitere Informationen zu erhalten.“\n      "
                       )
                     ])
                   : _vm._e(),
@@ -20008,7 +20018,7 @@ var render = function() {
                           }
                         }
                       },
-                      [_vm._v("Screening Starten")]
+                      [_vm._v("\n         Screening Starten\n      ")]
                     )
                   : _vm._e(),
                 _vm._v(" "),
@@ -20027,12 +20037,15 @@ var render = function() {
                 _vm._v(" "),
                 _vm.stage === "results"
                   ? _c(
-                      "span",
+                      "a",
                       {
-                        staticClass: "modal_why",
+                        staticClass: "modal_why btn btn-lg btn-neutral",
                         on: { click: _vm.toggleModal }
                       },
-                      [_vm._v("So geht es weiter")]
+                      [
+                        _vm._v("\n         So geht es weiter "),
+                        _c("i", { staticClass: "fas fa-arrow-right" })
+                      ]
                     )
                   : _vm._e(),
                 _vm._v(" "),
@@ -20065,6 +20078,48 @@ var render = function() {
                   : _vm._e(),
                 _vm._v(" "),
                 _vm.stage === "results"
+                  ? _c("div", { staticClass: "final_score" }, [
+                      _vm._v(
+                        "\n          " +
+                          _vm._s(_vm.correctAnswers) +
+                          " / " +
+                          _vm._s(_vm.questions.length) +
+                          "\n        "
+                      ),
+                      _c("span", { staticClass: "chart_icon" }, [
+                        _c(
+                          "svg",
+                          {
+                            staticClass: "feather feather-bar-chart",
+                            attrs: {
+                              xmlns: "http://www.w3.org/2000/svg",
+                              width: "24",
+                              height: "24",
+                              viewBox: "0 0 24 24",
+                              fill: "none",
+                              stroke: "currentColor",
+                              "stroke-width": "2",
+                              "stroke-linecap": "round",
+                              "stroke-linejoin": "round"
+                            }
+                          },
+                          [
+                            _c("line", {
+                              attrs: { x1: "12", y1: "20", x2: "12", y2: "10" }
+                            }),
+                            _c("line", {
+                              attrs: { x1: "18", y1: "20", x2: "18", y2: "4" }
+                            }),
+                            _c("line", {
+                              attrs: { x1: "6", y1: "20", x2: "6", y2: "16" }
+                            })
+                          ]
+                        )
+                      ])
+                    ])
+                  : _vm._e(),
+                _vm._v(" "),
+                _vm.stage === "results"
                   ? _c("p", {
                       staticClass: "quiz-result",
                       domProps: { innerHTML: _vm._s(_vm.resultsInfo.text) }
@@ -20075,7 +20130,6 @@ var render = function() {
                   ? _c(
                       "a",
                       {
-                        staticClass: "btn btn-lg btn-neutral",
                         attrs: { href: "#restart-quiz" },
                         on: {
                           click: function($event) {
@@ -20084,7 +20138,7 @@ var render = function() {
                           }
                         }
                       },
-                      [_vm._v("Zurück")]
+                      [_vm._v("\n        Screening wiederholen\n      ")]
                     )
                   : _vm._e(),
                 _vm._v(" "),
@@ -20333,6 +20387,17 @@ module.exports = function(module) {
 	return module;
 };
 
+
+/***/ }),
+
+/***/ "./resources/js/PreVueScreening/assets/white.png":
+/*!*******************************************************!*\
+  !*** ./resources/js/PreVueScreening/assets/white.png ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/white.png?065b2192a070d3ce5903058fb8d431f7";
 
 /***/ }),
 
