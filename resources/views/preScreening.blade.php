@@ -8,13 +8,13 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-5 col-md-6">
                         <h1 class="display-2 text-silentGreen">Worum geht's hier eigentlich?</h1>
+                        <img src="{{ asset('argon') }}/img/huzb-screening-img.png" class="w-75 img-fluid" alt="Responsive image">
                         <p class="lead text-white">SilentMoon hat eine Mission: Die Gesundheit auf
                             dieser Welt zu verbessern und das Glück zu steigern. Mit Millionen
                             von Nutzern in über 190 Ländern sind wir bereits auf dem Weg dies
                             zu erreichen. Neben unserem Hauptsitz in Santa Monica (Kalifornien),
                             haben wir noch Büros in San Francisco und London.
                         </p>
-                        <img src="{{ asset('argon') }}/img/silent-moon-hero.png" class="w-75 img-fluid" alt="Responsive image">
                         <div class="text-center">
                            <a href="/startScreening">
                             <button class="btn btn-lg btn-neutral mt-4">

@@ -37,7 +37,7 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-5 col-md-6">
                         <span class="badge badge-success">New</span>
-                        <h1 class="display-2 text-silentGreen">{{ __('Welcome to SilentMoon') }}</br>{{ auth()->user()->name }}</h1>
+                        <h1 class="display-2 text-silentGreen">{{ __('Welcome to SilentMoon') }}</br>Hallo, {{ auth()->user()->name }}</h1>
                         <p class="lead text-white">{{ __('explore free meditations, gain different attitudes and perspectives, while contributing to the science') }}</p>
                         <img src="{{ asset('argon') }}/img/silent-moon-hero.png" class="img-fluid" alt="Responsive image">
                         <div class="text-center">

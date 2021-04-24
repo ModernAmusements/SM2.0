@@ -51,7 +51,7 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: Montserrat, sans-serif;
+  --font-family-sans-serif: Helvetica, sans-serif;
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
@@ -89,7 +89,7 @@ section {
 
 body {
   margin: 0;
-  font-family: Montserrat, sans-serif;
+  font-family: Helvetica, sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -4578,6 +4578,7 @@ input[type=button].btn-block {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  flex-direction: row-reverse;
 }
 
 .navbar-brand {
@@ -6285,7 +6286,7 @@ button.close {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: Montserrat, sans-serif;
+  font-family: Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -6410,7 +6411,7 @@ button.close {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: Montserrat, sans-serif;
+  font-family: Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -16879,7 +16880,7 @@ textarea[resize=horizontal] {
 
 .navbar-horizontal .navbar-brand svg {
   display: flex;
-  height: 75px;
+  height: 90px;
   width: auto;
 }
 
@@ -16999,7 +17000,7 @@ textarea[resize=horizontal] {
   .navbar-horizontal .navbar-brand-mobile {
     display: flex;
     align-items: start;
-    justify-content: start;
+    justify-content: flex-end;
     padding: 1em;
   }
 

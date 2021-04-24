@@ -30,7 +30,7 @@
 
         svg {
             display: flex;
-            height: 75px;
+            height: 90px;
             width: auto;
         }
     }
@@ -168,7 +168,7 @@
         .navbar-brand-mobile {
             display: flex;
             align-items: start;
-            justify-content: start;
+            justify-content: flex-end;
             padding: 1em;
             img {
                 display: flex;
