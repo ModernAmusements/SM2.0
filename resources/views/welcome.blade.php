@@ -56,5 +56,35 @@
 
     <div class="container mt-0 pb-5"></div>
     @endauth
+    <div class="modal fade show" id="silentMoonModalCookies" tabindex="-1" role="dialog" aria-labelledby="silentMoonModalCookies" aria-modal="true">
+        <div class="modal-dialog modal- modal-dialog-centered modal-" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title" id="modal-title-default">Wir schneiden hier alles auf dich zu</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Wir verwenden Analysemethoden, um zu messen, wie häufig unsere Seite besucht und wie sie genutzt wird. Wir verwenden Trackingtechnologien zu Marketingzwecken und setzen hierzu auch Drittanbieter ein, die ggf. geräteübergreifend Cookies, Fingerprints, Tracking-Pixel und IP-Adressen nutzen. Wir betten Drittinhalte von anderen Anbietern ein. Wir setzen in diesem Rahmen auch Dienstleister in Ländern außerhalb des EWR ein, in denen Daten nicht in der gleichen Weise geschützt sind wie im EWR, was u.a. erweiterte Zugriffsrechte von Behörden und geringere Betroffenenrechte bedeuten kann. Mit Ihrer Einstellung willigen Sie in die oben beschriebenen Vorgänge ein. Sie können Ihre Einwilligung mit Wirkung für die Zukunft widerrufen. Mehr Informationen finden Sie in unserer Datenschutzerklärung. Sie können auch alle nicht erforderlichen Cookies ablehnen, wenn Sie mit den beschriebenen Datenverarbeitungen nicht einverstanden sind. Sie können auch alle nicht erforderlichen Cookies ablehnen, wenn Sie mit den beschriebenen Datenverarbeitungen nicht einverstanden sind.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Alle akzeptieren</button>
+              <button type="button" class="btn btn-link ml-auto" data-dismiss="modal">Datenschutzerklärung</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      @push('js')
+<script>
+    $(window).on('load', function() {
+    $('#silentMoonModalCookies').modal('show');
+});
+
+</script>
+<script src="{{ asset('argon') }}/js/init.js"></script>
+<script src="{{ asset('argon') }}/js/materialize.js"></script>
+@endpush
+
 @endsection
 
