@@ -26,6 +26,10 @@ use Illuminate\Support\Facades\Route;
     return view('intro');
 });
 
+Route::get('/imprint', function () {
+    return view('imprint');
+});
+
 Route::get('/preScreening', function () {
     return view('preScreening');
 });
