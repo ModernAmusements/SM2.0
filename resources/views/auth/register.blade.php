@@ -105,7 +105,7 @@
                                     <input class="custom-control-input" id="customCheckRegister" type="checkbox">
                                     <label class="custom-control-label" for="customCheckRegister">
                                         <span class="text-muted">{{ __('Ich bin mit den') }} <a
-                                             href="#!">{{ __('Datenschutzbestimmungen') }}</a> einverstanden</span>
+                                             href="/imprint">{{ __('Datenschutzbestimmungen') }}</a> einverstanden</span>
                                     </label>
                                 </div>
                             </div>

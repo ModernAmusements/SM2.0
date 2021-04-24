@@ -1,8 +1,6 @@
 @extends('layouts.app')
-
 @section('content')
     @include('layouts.headers.guest')
-
     <div class="container mt-2 pb-5">
         <div class="row justify-content-center">
             <div class="col-lg-5 col-md-7">
@@ -10,7 +8,7 @@
                     <div class="card-body px-lg-5 py-lg-5">
                         <div class="text-center text-muted mb-4">
                             <small>
-                                <a href="{{ route('register') }}">{{ __('Create new account') }}</a> {{ __('OR Sign In') }}
+                                <a href="{{ route('register') }}">{{ __('Neues Konto erstellen') }}</a> {{ __('oder Anmeldung') }}
                             </small>
                         </div>
                         <form role="form" method="POST" action="{{ route('login') }}">
@@ -44,11 +42,11 @@
                             <div class="custom-control custom-control-alternative custom-checkbox">
                                 <input class="custom-control-input" name="remember" id="customCheckLogin" type="checkbox" {{ old('remember') ? 'checked' : '' }}>
                                 <label class="custom-control-label" for="customCheckLogin">
-                                    <span class="text-muted">{{ __('Remember me') }}</span>
+                                    <span class="text-muted">{{ __('Erinnern Sie sich an mich') }}</span>
                                 </label>
                             </div>
                             <div class="text-center">
-                                <button type="submit" class="btn btn-primary my-4">{{ __('Sign in') }}</button>
+                                <button type="submit" class="btn btn-primary my-4">{{ __('Anmelden') }}</button>
                             </div>
                         </form>
                     </div>
@@ -57,13 +55,13 @@
                     <div class="col-6">
                         @if (Route::has('password.request'))
                             <a href="{{ route('password.request') }}" class="text-light">
-                                <small>{{ __('Forgot password?') }}</small>
+                                <small>{{ __('Passwort vergessen?') }}</small>
                             </a>
                         @endif
                     </div>
                     <div class="col-6 text-right">
                         <a href="{{ route('register') }}" class="text-light">
-                            <small>{{ __('Create new account') }}</small>
+                            <small>{{ __('Neue Teilnehmer-ID anlegen') }}</small>
                         </a>
                     </div>
                 </div>
