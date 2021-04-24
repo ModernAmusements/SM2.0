@@ -196,7 +196,7 @@
                 </div>
             </div>
             <!-- Navbar items -->
-            <ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav ml-4 mr-auto">
                 <li class="nav-item dropdown">
                     <a class="nav-link pr-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <div class="media align-items-center">

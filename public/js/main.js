@@ -227,6 +227,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 // import { store, mutations } from "./store"
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "App",
@@ -409,6 +411,10 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
+//
+//
+//
+//
 
 
 
@@ -463,37 +469,37 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
     resultsInfo: function resultsInfo() {
       if (this.correctAnswers < 0) {
         return {
-          text: "Vielen Dank für Ihre Zeit, leider kommen Sie nicht für die Studie in Frage"
+          text: 'Vielen Dank für Ihre Zeit!<br/><small>Leider kommen Sie nicht für die Studie in Frage</small>.'
         };
       }
 
       if (this.correctAnswers < 1) {
         return {
-          text: "Vielen Dank für Ihre Zeit, leider kommen Sie nicht für die Studie in Frage"
+          text: 'Vielen Dank für Ihre Zeit!<br/><small>Leider kommen Sie nicht für die Studie in Frage</small>.'
         };
       }
 
       if (this.correctAnswers < 2) {
         return {
-          text: "Vielen Dank für Ihre Zeit, leider kommen Sie nicht für die Studie in Frage"
+          text: 'Vielen Dank für Ihre Zeit!<br/><small>Leider kommen Sie nicht für die Studie in Frage</small>.'
         };
       }
 
       if (this.correctAnswers < 3) {
         return {
-          text: "Vielen Dank für Ihre Zeit, leider kommen Sie nicht für die Studie in Frage"
+          text: "Vielen Dank für Ihre Zeit!<br/><small>Leider kommen Sie nicht für die Studie in Frage</small>."
         };
       }
 
       if (this.correctAnswers < 4) {
         return {
-          text: "Vielen Dank für Ihre Zeit, leider kommen Sie nicht für die Studie in Frage"
+          text: "Vielen Dank für Ihre Zeit!<br/><small>Leider kommen Sie nicht für die Studie in Frage</small>."
         };
       }
 
       if (this.correctAnswers < 5) {
         return {
-          text: "Vielen Dank für Ihre Zeit, leider kommen Sie nicht für die Studie in Frage"
+          text: "Vielen Dank für Ihre Zeit!<br/><small>Leider kommen Sie nicht für die Studie in Frage</small>."
         };
       }
 
@@ -5089,7 +5095,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, "html {\n  height: 100%;\n}\nbody {\n  height: 100%;\n  background: linear-gradient(180deg, #FAF8F5 4.24%, rgba(255, 255, 255, 0) 72.25%);\n  color: #1F527D;\n}\n.btn-neutral,\na {\n  color: #1F527D;\n}\n.btn-neutral:hover,\na:hover {\n  color: #1F527D;\n}\n#app {\n  min-height: 100%;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  text-align: center;\n}\n#app .app-header {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 95px;\n  padding: 15px;\n  display: flex;\n  justify-content: space-between;\n  font-size: 11px;\n  flex-direction: column;\n}\n#app .app-header a {\n  text-decoration: none;\n  color: #1F527D;\n  border-bottom: 1px solid #1F527D;\n}\n#app .app-heading {\n  display: flex;\n  align-items: center;\n  position: absolute;\n  top: 30px;\n  left: 50%;\n  margin: 0;\n  padding-left: 20px;\n  font-size: 14px;\n  line-height: 15px;\n  transform: translateX(-50%);\n  cursor: default;\n  user-select: none;\n}\n#app .app-heading img {\n  margin-right: 8px;\n  width: 100%;\n  height: auto;\n}\n@media (min-width: 600px) {\n#app .app-header {\n    height: 90px;\n    padding: 30px 15px;\n    align-items: center;\n}\n#app .app-heading {\n    top: 30px;\n}\n}\n#app .app-heading-icon {\n  position: absolute;\n  top: 1px;\n  left: -5px;\n  fill: #eee;\n  width: 26px;\n  height: 26px;\n}\n#app .app-heading span {\n  display: block;\n}\n#app .app-header-text {\n  color: #1F527D;\n  font-size: 12px;\n}\n.v-leave {\n  opacity: 1;\n}\n.v-leave-active {\n  transition: opacity 0.5s;\n}\n.v-leave-to {\n  opacity: 0;\n}\n.v-enter {\n  opacity: 0;\n}\n.v-enter-active {\n  transition: opacity 0.5s;\n}\n.v-enter-to {\n  opacity: 1;\n}", ""]);
+exports.push([module.i, "html {\n  height: 100%;\n}\nbody {\n  height: 100%;\n  background: linear-gradient(0deg, #FAF8F5 4.24%, #006eab 96.25%);\n  color: #1F527D;\n}\n.btn-neutral,\na {\n  color: #1F527D;\n}\n.btn-neutral:hover,\na:hover {\n  color: #1F527D;\n}\n.img-s {\n  width: 50%;\n}\n.img-xs {\n  width: 25%;\n}\n#app {\n  min-height: 100%;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  text-align: center;\n}\n#app .app-header {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 95px;\n  padding: 15px;\n  display: flex;\n  justify-content: space-between;\n  font-size: 11px;\n  flex-direction: column;\n  height: 90px;\n  padding: 30px 15px;\n  align-items: center;\n}\n#app .app-header a {\n  text-decoration: none;\n}\n#app .app-heading {\n  display: flex;\n  align-items: center;\n  position: absolute;\n  top: 30px;\n  left: 50%;\n  margin: 0;\n  padding-left: 20px;\n  font-size: 14px;\n  line-height: 15px;\n  transform: translateX(-50%);\n  cursor: default;\n  user-select: none;\n}\n#app .app-heading img {\n  margin-right: 8px;\n  width: 100%;\n  height: auto;\n}\n@media (max-width: 600px) {\n#app .app-header {\n    height: 90px;\n    padding: 30px 15px;\n    align-items: center;\n}\n#app .app-heading {\n    top: 30px;\n}\n#app .img-s {\n    width: 100%;\n    height: auto;\n}\n#app .img-xs {\n    width: 15%;\n}\n}\n#app .app-heading span {\n  display: block;\n}\n#app .app-header-text {\n  color: #fff;\n  font-size: 12px;\n}\n.v-leave {\n  opacity: 1;\n}\n.v-leave-active {\n  transition: opacity 0.5s;\n}\n.v-leave-to {\n  opacity: 0;\n}\n.v-enter {\n  opacity: 0;\n}\n.v-enter-active {\n  transition: opacity 0.5s;\n}\n.v-enter-to {\n  opacity: 1;\n}", ""]);
 // Exports
 module.exports = exports;
 
@@ -5126,7 +5132,7 @@ var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../../node_mo
 exports = ___CSS_LOADER_API_IMPORT___(false);
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap);"]);
 // Module
-exports.push([module.i, ".wrapper {\n  width: 95%;\n  margin: 0 auto;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  padding: 110px 15px 30px 15px;\n}\nbutton:focus {\n  border: none;\n  outline: none;\n}\n.chart_icon {\n  cursor: pointer;\n  margin-left: 8px;\n}\n.chart_icon svg {\n  width: 30px;\n  height: 30px;\n  vertical-align: middle;\n}\na {\n  text-decoration: none;\n}\n.highlight_wording {\n  color: #0387c7;\n}\n.modal_why {\n  font-size: 1.2rem;\n  cursor: pointer;\n}\n.final_score {\n  font-size: 2rem;\n}\n.explanation_text {\n  height: 240px;\n  overflow-y: scroll;\n  background-color: #181e24;\n  border-radius: 4px;\n  padding: 15px 20px;\n  text-align: justify;\n  line-height: 1.5rem;\n  color: darkgray;\n}\n.explanation_text img {\n  margin: 12px 0;\n}\n.quiz {\n  position: relative;\n  width: 100%;\n  max-width: 500px;\n}\n.result_img img {\n  margin: 15px 0;\n  width: 300px;\n}\n.quiz-counter {\n  position: absolute;\n  top: -25px;\n  font-size: 14px;\n  font-weight: 500;\n}\n.quiz-counter .current-question {\n  font-size: 22px;\n}\n@media (min-width: 600px) {\n.quiz-counter {\n    font-size: 16px;\n}\n}\n.welcome_img_wrapper {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n.quiz-img {\n  display: block;\n  width: 200px;\n  margin-bottom: 1rem;\n}\n.quiz-heading {\n  margin: 20px 0;\n  font-size: 1.5rem;\n  line-height: 1.8;\n  font-weight: 600;\n  color: #1F527D;\n  text-align: left;\n}\n.welcome-heading {\n  margin: 20px 0;\n  font-size: 1.5rem;\n  line-height: 1.8;\n  font-weight: 600;\n  color: #1F527D;\n  text-align: center;\n}\n@media (min-width: 600px) {\n.quiz-heading {\n    /* margin: -40px 0 30px; */\n    font-size: 1.5rem;\n}\n}\n.quiz-result {\n  margin: 20px 0;\n  font-size: 22px;\n  line-height: 1.4rem;\n  letter-spacing: 1px;\n}\n@media (min-width: 600px) {\n.quiz-result {\n    margin: 20px 0 30px;\n}\n}\n.quiz-button {\n  display: inline-block;\n  padding: 10px 30px;\n  margin-bottom: 4px;\n  border: 1px solid rgba(238, 238, 238, 0.3);\n  color: #eee;\n  text-decoration: none;\n  transition: border-color 0.5s;\n}\n.quiz-button:hover {\n  border-color: #eee;\n}\n.quiz-questions {\n  max-width: 400px;\n  padding: 0;\n  margin: 0 auto;\n  list-style: none;\n}\n.quiz-question {\n  margin-top: 10px;\n}\n.quiz-question-button {\n  width: 100%;\n  padding: 13px;\n  border-radius: 15px;\n  background: #F2F3F7;\n  color: #1F527D;\n  font-size: 1rem;\n  font-weight: 500;\n  border: 0;\n  cursor: pointer;\n  transition: border-color 0.5s, background 0.5s;\n  outline: none;\n}\n.quiz-question-button:hover {\n  background: #989cac;\n  color: #1F527D;\n}\n.quiz-question-button.correct {\n  background: #28a745;\n}\n.quiz-question-button.wrong {\n  background: #dc3545;\n}\n@media (min-width: 600px) {\n.quiz-question-button {\n    font-size: 14px;\n}\n}\n@media (hover: hover) {\n.quiz-question-button:hover,\n.quiz-question-button:focus {\n    border-color: #eee;\n}\n}\n/* Loader */\n.loader {\n  height: 32px;\n  width: 32px;\n}\n.loader span {\n  display: block;\n  position: fixed;\n  top: 0;\n  left: 0;\n  bottom: 0;\n  right: 0;\n  margin: auto;\n  height: 32px;\n  width: 32px;\n}\n.loader span::before,\n.loader span::after {\n  content: \"\";\n  display: block;\n  position: absolute;\n  top: 0;\n  left: 0;\n  bottom: 0;\n  right: 0;\n  margin: auto;\n  height: 32px;\n  width: 32px;\n  border: 2px solid #fff;\n  border-radius: 50%;\n  opacity: 0;\n  animation: loader-1 1.5s cubic-bezier(0.075, 0.82, 0.165, 1) infinite;\n}\n@keyframes loader-1 {\n0% {\n    transform: translate3d(0, 0, 0) scale(0);\n    opacity: 1;\n}\n100% {\n    transform: translate3d(0, 0, 0) scale(1.5);\n    opacity: 0;\n}\n}\n.loader span::after {\n  animation: loader-2 1.5s cubic-bezier(0.075, 0.82, 0.165, 1) 0.25s infinite;\n}\n@keyframes loader-2 {\n0% {\n    transform: translate3d(0, 0, 0) scale(0);\n    opacity: 1;\n}\n100% {\n    transform: translate3d(0, 0, 0) scale(1);\n    opacity: 0;\n}\n}\n/* Transition */\n.fade-enter-active,\n.fade-leave-active {\n  transition: opacity 0.5s, transform 0.5s;\n}\n.fade-enter, .fade-leave-to {\n  opacity: 0;\n  transform: scale(0.95);\n}", ""]);
+exports.push([module.i, ".wrapper {\n  width: 95%;\n  margin: 0 auto;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  padding: 110px 15px 30px 15px;\n}\nbutton:focus {\n  border: none;\n  outline: none;\n}\n.chart_icon {\n  cursor: pointer;\n  margin-left: 8px;\n}\n.chart_icon svg {\n  width: 30px;\n  height: 30px;\n  vertical-align: middle;\n}\na {\n  text-decoration: none;\n}\n.highlight_wording {\n  color: #0387c7;\n}\n.modal_why {\n  font-size: 1.2rem;\n  cursor: pointer;\n}\n.final_score {\n  font-size: 2rem;\n}\n.explanation_text {\n  height: 240px;\n  overflow-y: scroll;\n  background-color: #181e24;\n  border-radius: 4px;\n  padding: 15px 20px;\n  text-align: justify;\n  line-height: 1.5rem;\n  color: darkgray;\n}\n.explanation_text img {\n  margin: 12px 0;\n}\n.quiz {\n  position: relative;\n  width: 100%;\n  max-width: 500px;\n}\n.result_img img {\n  margin: 15px 0;\n  width: 300px;\n}\n.quiz-counter {\n  position: absolute;\n  top: -25px;\n  font-size: 14px;\n  font-weight: 500;\n}\n.quiz-counter .current-question {\n  font-size: 22px;\n}\n@media (max-width: 600px) {\n.quiz {\n    margin-top: 25%;\n}\n}\n.welcome_img_wrapper {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n.quiz-img {\n  display: block;\n  width: 200px;\n  margin-bottom: 1rem;\n}\n.quiz-heading {\n  margin: 20px 0;\n  font-size: 1.5rem;\n  line-height: 1.8;\n  font-weight: 600;\n  color: #1F527D;\n  text-align: left;\n}\n.welcome-heading {\n  margin: 20px 0;\n  font-size: 1.5rem;\n  line-height: 1.8;\n  font-weight: 600;\n  color: #1F527D;\n  text-align: center;\n}\n@media (min-width: 600px) {\n.quiz-heading {\n    /* margin: -40px 0 30px; */\n    font-size: 1.5rem;\n}\n}\n.quiz-result {\n  margin: 20px 0;\n  font-size: 22px;\n  line-height: 1.4rem;\n  letter-spacing: 1px;\n}\n@media (min-width: 600px) {\n.quiz-result {\n    margin: 20px 0 30px;\n}\n}\n.quiz-button {\n  display: inline-block;\n  padding: 10px 30px;\n  margin-bottom: 4px;\n  border: 1px solid rgba(238, 238, 238, 0.3);\n  color: #eee;\n  text-decoration: none;\n  transition: border-color 0.5s;\n}\n.quiz-button:hover {\n  border-color: #eee;\n}\n.quiz-questions {\n  max-width: 400px;\n  padding: 0;\n  margin: 0 auto;\n  list-style: none;\n}\n.quiz-question {\n  margin-top: 10px;\n}\n.quiz-question-button {\n  width: 100%;\n  padding: 13px;\n  border-radius: 15px;\n  background: #F2F3F7;\n  color: #1F527D;\n  font-size: 1rem;\n  font-weight: 500;\n  border: 0;\n  cursor: pointer;\n  transition: border-color 0.5s, background 0.5s;\n  outline: none;\n}\n.quiz-question-button:hover {\n  background: #989cac;\n  color: #1F527D;\n}\n.quiz-question-button.correct {\n  background: #28a745;\n}\n.quiz-question-button.wrong {\n  background: #dc3545;\n}\n@media (min-width: 600px) {\n.quiz-question-button {\n    font-size: 14px;\n}\n}\n@media (hover: hover) {\n.quiz-question-button:hover,\n.quiz-question-button:focus {\n    border-color: #eee;\n}\n}\n/* Loader */\n.loader {\n  height: 32px;\n  width: 32px;\n}\n.loader span {\n  display: block;\n  position: fixed;\n  top: 0;\n  left: 0;\n  bottom: 0;\n  right: 0;\n  margin: auto;\n  height: 32px;\n  width: 32px;\n}\n.loader span::before,\n.loader span::after {\n  content: \"\";\n  display: block;\n  position: absolute;\n  top: 0;\n  left: 0;\n  bottom: 0;\n  right: 0;\n  margin: auto;\n  height: 32px;\n  width: 32px;\n  border: 2px solid #fff;\n  border-radius: 50%;\n  opacity: 0;\n  animation: loader-1 1.5s cubic-bezier(0.075, 0.82, 0.165, 1) infinite;\n}\n@keyframes loader-1 {\n0% {\n    transform: translate3d(0, 0, 0) scale(0);\n    opacity: 1;\n}\n100% {\n    transform: translate3d(0, 0, 0) scale(1.5);\n    opacity: 0;\n}\n}\n.loader span::after {\n  animation: loader-2 1.5s cubic-bezier(0.075, 0.82, 0.165, 1) 0.25s infinite;\n}\n@keyframes loader-2 {\n0% {\n    transform: translate3d(0, 0, 0) scale(0);\n    opacity: 1;\n}\n100% {\n    transform: translate3d(0, 0, 0) scale(1);\n    opacity: 0;\n}\n}\n/* Transition */\n.fade-enter-active,\n.fade-leave-active {\n  transition: opacity 0.5s, transform 0.5s;\n}\n.fade-enter, .fade-leave-to {\n  opacity: 0;\n  transform: scale(0.95);\n}", ""]);
 // Exports
 module.exports = exports;
 
@@ -19857,13 +19863,28 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("header", { staticClass: "app-header" }, [
       _c("img", {
-        attrs: { src: __webpack_require__(/*! ../assets/screening.png */ "./resources/js/PreVueScreening/assets/screening.png"), alt: "" }
+        staticClass: "img-s",
+        attrs: { src: __webpack_require__(/*! ../assets/HU-Screening.png */ "./resources/js/PreVueScreening/assets/HU-Screening.png"), alt: "" }
       }),
       _vm._v(" "),
-      _c("h3", { staticClass: "app-header-text" }, [
-        _vm._v("\n      Thanks To\n      "),
-        _c("a", { attrs: { href: "", target: "_blank" } }, [
-          _vm._v("\n      Frau Mustermann\n      ")
+      _c("div", [
+        _c("h3", { staticClass: "app-header-text" }, [
+          _vm._v("\n          Mit freundlicher Unterstützung der:\n          "),
+          _c(
+            "a",
+            {
+              attrs: {
+                href: "http://www.mind-and-brain.de/home/",
+                target: "_blank"
+              }
+            },
+            [
+              _c("img", {
+                staticClass: "img-xs",
+                attrs: { src: __webpack_require__(/*! ../assets/BSMB-logo.png */ "./resources/js/PreVueScreening/assets/BSMB-logo.png"), alt: "" }
+              })
+            ]
+          )
         ])
       ])
     ])
@@ -19995,7 +20016,9 @@ var render = function() {
                 _vm._v(" "),
                 _vm.stage === "welcome"
                   ? _c("h1", { staticClass: "welcome-heading" }, [
-                      _vm._v("\n          Willkommen beim Screening\n      ")
+                      _vm._v("\n          Willkommen beim Screening "),
+                      _c("br"),
+                      _vm._v(" der Humboldt-Universität zu Berlin\n      ")
                     ])
                   : _vm._e(),
                 _vm._v(" "),
@@ -20035,20 +20058,6 @@ var render = function() {
                         )
                       }
                     })
-                  : _vm._e(),
-                _vm._v(" "),
-                _vm.stage === "results"
-                  ? _c(
-                      "a",
-                      {
-                        staticClass: "modal_why btn btn-lg btn-neutral",
-                        on: { click: _vm.toggleModal }
-                      },
-                      [
-                        _vm._v("\n         So geht es weiter "),
-                        _c("i", { staticClass: "fas fa-arrow-right" })
-                      ]
-                    )
                   : _vm._e(),
                 _vm._v(" "),
                 _c("explanation-modal", {
@@ -20127,6 +20136,22 @@ var render = function() {
                       domProps: { innerHTML: _vm._s(_vm.resultsInfo.text) }
                     })
                   : _vm._e(),
+                _vm._v(" "),
+                _c("div", { staticClass: "mb-2" }, [
+                  _vm.stage === "results"
+                    ? _c(
+                        "a",
+                        {
+                          staticClass: "modal_why btn btn-lg btn-neutral",
+                          on: { click: _vm.toggleModal }
+                        },
+                        [
+                          _vm._v("\n         So geht es weiter "),
+                          _c("i", { staticClass: "fas fa-arrow-right" })
+                        ]
+                      )
+                    : _vm._e()
+                ]),
                 _vm._v(" "),
                 _vm.stage === "results"
                   ? _c(
@@ -20392,14 +20417,25 @@ module.exports = function(module) {
 
 /***/ }),
 
-/***/ "./resources/js/PreVueScreening/assets/screening.png":
+/***/ "./resources/js/PreVueScreening/assets/BSMB-logo.png":
 /*!***********************************************************!*\
-  !*** ./resources/js/PreVueScreening/assets/screening.png ***!
+  !*** ./resources/js/PreVueScreening/assets/BSMB-logo.png ***!
   \***********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/images/screening.png?70312bf9661505d482884a88258b0590";
+module.exports = "/images/BSMB-logo.png?3e8a45f9c9dba15841fb5d6be6226f45";
+
+/***/ }),
+
+/***/ "./resources/js/PreVueScreening/assets/HU-Screening.png":
+/*!**************************************************************!*\
+  !*** ./resources/js/PreVueScreening/assets/HU-Screening.png ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/HU-Screening.png?1299c395faaf0089f53bd108be53a795";
 
 /***/ }),
 

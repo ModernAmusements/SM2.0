@@ -1,10 +1,10 @@
-<div class="header bg-gradient-primary pb-8 pt-5 pt-md-8">
+<div class="header bg-primary pb-8 pt-5 pt-md-8">
     <div class="container-fluid">
         <div class="header-body">
             <!-- Card stats -->
             @include('users.partials.header', [
-                'title' => __('Hello') . ' '. auth()->user()->name,
-                'description' => __('Explore the app, Find some peace of mind to prepare for meditation'),
+                'title' => __('Hallo') . ' '. auth()->user()->name,
+                'description' => __('Erkunden Sie die App, finden Sie etwas Ruhe, um sich auf die Meditation vorzubereiten'),
                 'class' => 'col-lg-7'
             ])
             {{-- <div class="row">

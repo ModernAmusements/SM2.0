@@ -208,7 +208,7 @@
                 </div>
             </div>
             <!-- Navbar items -->
-            <ul class="nav nav-pills nav-fill flex-column flex-sm-row mr-auto" id="tabs-text" role="tablist">
+            <ul class="nav nav-pills nav-fill flex-column flex-sm-row  mr-auto" id="tabs-text" role="tablist">
                 <li class="nav-item">
                     <a class="nav-link"
                        href="/welcome">

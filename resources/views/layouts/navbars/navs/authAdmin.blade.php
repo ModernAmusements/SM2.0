@@ -196,7 +196,7 @@
                 </div>
             </div>
             <!-- Navbar items -->
-            <ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav ml-6 mr-auto">
                 <li class="nav-item dropdown">
                     <a class="nav-link pr-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <div class="media align-items-center">
@@ -210,31 +210,30 @@
                     </a>
                     <div class="dropdown-menu dropdown-menu-arrow dropdown-menu-right">
                         <div class=" dropdown-header noti-title">
-                            <h6 class="text-overflow m-0">{{ __('Welcome!') }}</h6>
+                            <h6 class="text-overflow m-0">{{ __('Herzlich willkommen!') }}</h6>
                         </div>
                         <a href="{{ route('new.survey', 'Create new') }}" class="dropdown-item">
-
-                            <span>{{ __('New Survey') }}</span>
+                            <span>{{ __('Neue Umfrage') }}</span>
                         </a>
                         <a href="#" class="dropdown-item">
 
-                            <span>{{ __('Survey Results') }}</span>
+                            <span>{{ __('Umfrageergebnisse') }}</span>
                         </a>
                         <a href="#" class="dropdown-item">
 
-                            <span>{{ __('User Overview') }}</span>
+                            <span>{{ __('Benutzerübersicht') }}</span>
                         </a>
 
                         <a href="/admin" class="dropdown-item">
 
-                            <span>{{ __('Survey Overview') }}</span>
+                            <span>{{ __('Überblick über die Umfrage') }}</span>
                         </a>
 
                         <div class="dropdown-divider"></div>
                         <a href="{{ route('logout') }}" class="dropdown-item" onclick="event.preventDefault();
                         document.getElementById('logout-form').submit();">
 
-                            <span>{{ __('Logout') }}</span>
+                            <span>{{ __('Abmelden') }}</span>
                         </a>
                     </div>
                 </li>

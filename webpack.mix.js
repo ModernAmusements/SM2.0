@@ -11,6 +11,6 @@ let mix = require("laravel-mix");
  |
  */
 
-//  mix.sass('resources/scss/argon-dashboard.scss', 'public/css')
-mix.js('resources/js/app.js', 'public/js')
-    .js('resources/js/PreVueScreening/src/main.js', 'public/js')
+  mix.sass('resources/scss/argon-dashboard.scss', 'public/css')
+// mix.js('resources/js/app.js', 'public/js')
+//     .js('resources/js/PreVueScreening/src/main.js', 'public/js')
